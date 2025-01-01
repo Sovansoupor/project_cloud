@@ -8,10 +8,10 @@ services:
     volumes:
       - ./:/app
     environment:
-      MYSQL_HOST: mysql
+      MYSQL_HOST: todos-db.cnguyw6qkgsg.ap-southeast-1.rds.amazonaws.com
       MYSQL_USER: root
-      MYSQL_PASSWORD: secret
-      MYSQL_DB: todos
+      MYSQL_PASSWORD: secret123
+      MYSQL_DB: todos-db
 
   mysql:
     image: mysql:8.0
